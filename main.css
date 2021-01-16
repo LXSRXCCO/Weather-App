@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(0, 140, 255);
+}
+
+.title {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 100px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1.5s ease;
+}
+
+.title-appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.input-section {
+    text-align: center;
+    margin-right: 40px;
+    opacity: 0;
+    transform: translateY(0px);
+    transition: 1.5s ease;
+}
+
+.input-section-appear {
+    opacity: 1;
+    transform: translateY(20px);
+}
+
+.input-section input {
+    background: black;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.input-section input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-section button {
+    position: absolute;
+    height: 43px;
+    width: 43px;
+    background: black;
+    outline: none;
+    border: none;
+    color: white;
+    transition: .5s ease;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.input-section button:hover {
+    background: rgb(0, 140, 255);
+    transition: .5s ease;
+    color: black;
+}
+
+.fa-plus-square {
+    pointer-events: none;
+}
+
+.output {
+    text-align: center;
+    padding: 70px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 25px;
+}
